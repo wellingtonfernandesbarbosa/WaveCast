@@ -1,10 +1,20 @@
+/* Define o menu lateral como um contêiner grid */
 .menu-lateral {
   display: grid;
+  /* Ativa o layout de grid para organizar os elementos filhos */
+
+  /* Define a configuração das linhas no grid */
+  /* repeat(3, auto) -> Cria 3 linhas com altura ajustada ao conteúdo */
+  /* 1fr -> A última linha ocupa o espaço restante do contêiner */
   grid-template-rows: repeat(3, auto) 1fr;
+
+  /* Define o espaçamento entre as linhas do grid */
   gap: 2rem;
+  /* Adiciona um espaçamento de 2rem entre os elementos */
 }
 
+/* Estilo para o elemento do logo dentro do menu lateral */
 .menu-lateral__logo {
-  /* Ideal para centralizar na horizontal */
+  /* Centraliza o elemento na horizontal dentro da célula do grid */
   justify-self: center;
 }

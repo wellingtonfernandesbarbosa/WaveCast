@@ -1,20 +1,35 @@
+/* Define o corpo do documento como um contêiner grid */
 body {
   display: grid;
-  grid-template-areas: 
-  "aside header"
-  "aside main";
+  /* Ativa o layout de grid para o corpo da página */
+
+  /* Define as áreas nomeadas no grid para facilitar o posicionamento dos elementos */
+  /* "aside header" -> Primeira linha com duas áreas: aside e header */
+  /* "aside main"   -> Segunda linha com duas áreas: aside e main */
+  grid-template-areas:
+    "aside header"
+    "aside main";
+
+  /* Define as larguras das colunas do grid */
+  /* 'auto' ajusta-se ao conteúdo e '1fr' ocupa o restante do espaço disponível */
   grid-template-columns: auto 1fr;
+  /* Coluna 1 com largura automática e coluna 2 ocupando o restante */
 }
 
+/* Estilo para o menu lateral */
 .menu-lateral {
   grid-area: aside;
-  
+  /* Posiciona o elemento na área nomeada 'aside' */
 }
 
+/* Estilo para o cabeçalho */
 .cabecalho {
   grid-area: header;
+  /* Posiciona o elemento na área nomeada 'header' */
 }
 
+/* Estilo para o conteúdo principal */
 .principal {
   grid-area: main;
+  /* Posiciona o elemento na área nomeada 'main' */
 }

@@ -1,10 +1,37 @@
+/* Define a seção como um contêiner grid */
 .secao {
   display: grid;
+  /* Ativa o layout de grid para organizar os elementos filhos */
+
+  /* Alinha os elementos filhos ao final de suas células no grid */
   align-items: end;
+
+  /* Define o espaçamento entre as linhas no grid */
   row-gap: 2rem;
+  /* Adiciona um espaçamento de 2rem entre as linhas */
 }
 
-.secao-horizontal, 
+/* Configuração das linhas para seções horizontais e verticais */
+.secao-horizontal,
 .secao-vertical {
+  /* Define duas linhas no grid */
+  /* Primeira linha com 70px de altura, segunda linha com altura automática */
   grid-template-rows: 70px auto;
+}
+
+/* Define a área de cartões na seção horizontal como um contêiner grid */
+.secao-horizontal .secao__cartoes {
+  display: grid;
+  /* Ativa o layout de grid para os cartões */
+
+  /* Configuração das colunas do grid */
+  /* repeat(auto-fit, ...) cria um número dinâmico de colunas que se ajustam ao espaço disponível */
+  /* minmax(...) define o tamanho mínimo e máximo das colunas */
+  grid-template-columns: repeat(auto-fit,
+      minmax(min(80%/2, max(350px, 80%/3)),
+        1fr));
+
+  /* Define o espaçamento entre os itens no grid */
+  gap: 1.25rem;
+  /* Espaçamento de 1.25rem entre os itens */
 }
