@@ -1,4 +1,7 @@
+/* Estilo para telas com largura máxima de 1023px */
 @media only screen and (max-width: 1023px) {
+
+    /* Oculta os elementos listados em telas pequenas */
     .menu-lateral,
     .rodape,
     .cabecalho__botao,
@@ -7,83 +10,127 @@
     .secao-horizontal .cartao__player,
     .secao-vertical .secao__link {
         display: none;
+        /* Torna os elementos invisíveis e os remove do fluxo do layout */
     }
 
+    /* Adiciona espaçamento interno horizontal ao container */
     .container {
         padding-left: 1rem;
+        /* Espaçamento interno à esquerda */
         padding-right: 1rem;
+        /* Espaçamento interno à direita */
     }
 
+    /* Exibe a barra de navegação */
     .navbar {
         display: block;
-    } 
-    
+        /* Torna a navbar visível */
+    }
+
+    /* Centraliza o cabeçalho no eixo horizontal */
     .cabecalho {
         justify-self: center;
     }
 
+    /* Define o espaçamento entre as colunas no grid do cartão */
+    .secao-horizontal .cartao {
+        column-gap: 0.5rem;
+        /* Espaçamento de 0.5rem entre as colunas */
+    }
+
+    /* Define a altura da imagem do cartão */
     .secao-horizontal .cartao__imagem {
         height: 4.58rem;
+        /* Altura fixa da imagem */
     }
- 
+
+    /* Ajusta a fonte do título do cartão */
     .secao-horizontal .cartao__titulo {
         font: 700 14px/20px Open Sans, sans-serif;
+        /* Peso, tamanho, altura da linha e fonte */
+        align-self: center;
+        /* Centraliza o título verticalmente na célula */
     }
 
+    /* Remove o fundo e o espaçamento interno do cartão vertical */
     .secao-vertical .cartao {
         background-color: transparent;
+        /* Remove o fundo */
         padding: 0;
+        /* Remove o espaçamento interno */
     }
-
 }
 
+/* Estilo para telas entre 1024px e 1399px */
 @media only screen and (min-width: 1024px) and (max-width: 1399px) {
 
+    /* Ajusta o espaçamento interno horizontal do container */
     .container {
         padding-left: 1.25rem;
+        /* Espaçamento interno à esquerda */
         padding-right: 1.25rem;
+        /* Espaçamento interno à direita */
     }
 
+    /* Oculta a logo e o botão de avançar no cabeçalho */
     .cabecalho .cabecalho__logo,
     .cabecalho__botao__avancar {
         display: none;
+        /* Torna os elementos invisíveis */
     }
 
+    /* Define a largura do menu lateral */
     .menu-lateral {
         width: 208px;
+        /* Largura fixa do menu lateral */
     }
 
+    /* Oculta a barra de navegação */
     .navbar {
         display: none;
+        /* Torna a navbar invisível */
     }
 
+    /* Define a altura da imagem do cartão horizontal */
     .secao-horizontal .cartao__imagem {
         height: 73px;
+        /* Altura fixa da imagem */
     }
 
+    /* Ajusta a fonte do título do cartão horizontal */
     .secao-horizontal .cartao__titulo {
         font: 700 16px/22px 'Open Sans', sans-serif;
+        /* Peso, tamanho, altura da linha e fonte */
     }
 
+    /* Ajusta a fonte e largura do subtítulo do cartão horizontal */
     .secao-horizontal .cartao__subtitulo {
         font: 400 14px/19px 'Open Sans', sans-serif;
+        /* Peso, tamanho, altura da linha e fonte */
         width: 100%;
+        /* O subtítulo ocupa toda a largura disponível */
     }
 
+    /* Adiciona espaçamento interno ao cartão vertical */
     .secao-vertical .cartao {
         padding: 1.25rem;
+        /* Espaçamento interno uniforme */
     }
-
 }
 
+/* Estilo para telas com largura mínima de 1400px */
 @media only screen and (min-width: 1400px) {
 
+    /* Oculta a navbar e a logo do cabeçalho */
     .navbar,
     .cabecalho__logo {
         display: none;
+        /* Torna os elementos invisíveis */
     }
 
+    /* Define a largura do menu lateral */
     .menu-lateral {
         width: 228px;
+        /* Largura fixa do menu lateral */
     }
 }

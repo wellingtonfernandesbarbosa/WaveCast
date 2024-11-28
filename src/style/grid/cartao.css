@@ -1,0 +1,47 @@
+/* Define o elemento com a classe 'cartao' como um contêiner grid */
+.secao-horizontal .cartao {
+  display: grid;
+  /* Ativa o layout de grid para organizar os elementos filhos */
+
+  /* Define a configuração das colunas no grid */
+  /* 'auto' ajusta-se ao tamanho do conteúdo, '1fr' ocupa o restante do espaço disponível */
+  grid-template-columns: auto 1fr auto;
+  /* Três colunas: conteúdo automático, espaço flexível, conteúdo automático */
+
+  /* Define a configuração das linhas no grid */
+  /* 'auto' ajusta-se ao conteúdo, '3rem' e '0.9rem' definem alturas fixas para as linhas */
+  grid-template-rows: auto 3rem 0.9rem;
+  /* Três linhas: altura automática, 3rem e 0.9rem */
+
+  /* Define o espaçamento entre as colunas no grid */
+  column-gap: 1.25rem;
+  /* Adiciona um espaçamento de 1.25rem entre as colunas */
+}
+
+/* Define a área para o elemento com a classe 'cartao__imagem' dentro do grid */
+/* grid-area: linha inicial / coluna inicial / linha final / coluna final */
+.secao-horizontal .cartao__imagem {
+  grid-area: 1 / 1 / 4 / 2;
+  /* Ocupa da linha 1 à 4 e da coluna 1 à 2 */
+}
+
+/* Define a área para o botão dentro do grid */
+/* grid-area: linha inicial / coluna inicial / linha final / coluna final */
+.secao-horizontal .cartao__botao {
+  grid-area: 2 / 3 / 3 / 4;
+  /* Ocupa da linha 2 à 3 e da coluna 3 à 4 */
+}
+
+/* Define a área para o título dentro do grid */
+/* grid-area: linha inicial / coluna inicial / linha final / coluna final */
+.secao-horizontal .cartao__titulo {
+  grid-area: 2 / 2 / 3 / 3;
+  /* Ocupa da linha 2 à 3 e da coluna 2 à 3 */
+}
+
+/* Define a área para o player dentro do grid */
+/* grid-area: linha inicial / coluna inicial / linha final / coluna final */
+.secao-horizontal .cartao__player {
+  grid-area: 3 / 2 / 4 / 3;
+  /* Ocupa da linha 3 à 4 e da coluna 2 à 3 */
+}
