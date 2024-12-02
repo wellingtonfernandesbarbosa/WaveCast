@@ -65,3 +65,21 @@
   column-gap: 1.25rem;
   /* Define um espaçamento de 1.25rem entre as colunas. */
 }
+
+/* Define o estilo para os links dentro do contêiner de cartões na seção vertical */
+.secao-vertical .secao__cartoes a {
+  display: flex;
+  /* Aplica o layout flexível ao link, permitindo organizar seus filhos em um eixo. */
+
+  flex-direction: column;
+  /* Organiza os elementos filhos do link em uma direção vertical (de cima para baixo). */
+
+  height: 100%;
+  /* Faz com que o link ocupe toda a altura disponível dentro de seu contêiner pai. */
+}
+
+/* Define o estilo para o título do cartão dentro do contêiner de cartões */
+.secao-vertical .secao__cartoes .cartao__titulo {
+  flex-grow: 1;
+  /* Faz com que o título ocupe todo o espaço vertical restante disponível dentro do contêiner pai. */
+}
