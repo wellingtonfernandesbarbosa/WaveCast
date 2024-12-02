@@ -1,0 +1,8 @@
+/* Define o estilo para os botões dentro dos links da barra lateral */
+.menu-lateral__link button {
+  display: flex;
+  /* Define o layout flexível para o botão, permitindo a organização dos elementos internos no eixo principal. */
+
+  align-items: center;
+  /* Alinha os itens do botão verticalmente ao centro, garantindo que textos e ícones estejam alinhados. */
+}
