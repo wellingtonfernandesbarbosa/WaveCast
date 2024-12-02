@@ -35,3 +35,33 @@
   gap: 1.25rem;
   /* Espaçamento de 1.25rem entre os itens */
 }
+
+/* Define o layout para a seção vertical */
+.secao-vertical {
+  grid-template-columns: 1fr auto;
+  /* Cria duas colunas:
+     - A primeira ocupa todo o espaço disponível (1fr).
+     - A segunda tem tamanho automático com base no conteúdo. */
+}
+
+/* Define o estilo para o contêiner dos cartões dentro da seção vertical */
+.secao-vertical .secao__cartoes {
+  display: grid;
+  /* Aplica o layout grid ao contêiner dos cartões. */
+
+  grid-auto-flow: column;
+  /* Organiza os itens do grid automaticamente no sentido das colunas. */
+
+  overflow-x: scroll;
+  /* Adiciona rolagem horizontal caso o conteúdo exceda a largura disponível. */
+
+  overflow-y: hidden;
+  /* Oculta qualquer rolagem vertical, forçando o conteúdo a se manter na altura do contêiner. */
+
+  grid-column: 1 / 3;
+  /* Faz o contêiner ocupar a largura total das colunas definidas na grid pai
+     (da coluna 1 até a coluna 3). */
+
+  column-gap: 1.25rem;
+  /* Define um espaçamento de 1.25rem entre as colunas. */
+}
