@@ -64,6 +64,8 @@
 
   column-gap: 1.25rem;
   /* Define um espaçamento de 1.25rem entre as colunas. */
+
+  padding-bottom: 0.5rem;
 }
 
 /* Define o estilo para os links dentro do contêiner de cartões na seção vertical */
