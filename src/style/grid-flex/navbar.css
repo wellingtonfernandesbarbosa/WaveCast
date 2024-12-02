@@ -6,3 +6,42 @@
   align-items: center;
   /* Alinha os itens do botão verticalmente ao centro, garantindo que textos e ícones estejam alinhados. */
 }
+
+/* Define o estilo para o contêiner de itens dentro da barra de navegação */
+.navbar .navbar__items {
+  display: grid;
+  /* Define o layout como grid para organizar os itens. */
+
+  grid-template-columns: repeat(3, 1fr);
+  /* Cria uma grade com três colunas de tamanhos iguais (1fr cada). */
+
+  gap: 2rem;
+  /* Define um espaçamento de 2rem entre as células da grade (tanto horizontal quanto vertical). */
+}
+
+/* Define o estilo para cada item dentro do contêiner de itens da barra de navegação */
+.navbar__items .navbar__item {
+  display: flex;
+  /* Aplica um layout flexível a cada item. */
+
+  flex-direction: column;
+  /* Organiza os elementos filhos verticalmente. */
+
+  align-items: center;
+  /* Alinha os elementos filhos ao centro no eixo transversal (horizontal, neste caso). */
+}
+
+/* Define o estilo para os botões dentro de cada item da barra de navegação */
+.navbar__item button {
+  display: flex;
+  /* Define o layout flexível para o botão. */
+
+  flex-direction: column;
+  /* Organiza os elementos do botão (como texto e ícones) em uma coluna, de cima para baixo. */
+
+  row-gap: .4rem;
+  /* Define um espaçamento de 0.4rem entre as linhas dos elementos dentro do botão. */
+
+  align-items: center;
+  /* Centraliza os elementos do botão no eixo horizontal. */
+}
